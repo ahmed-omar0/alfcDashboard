@@ -1,0 +1,186 @@
+/* Start Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;600&family=Roboto:wght@300;400&display=swap');
+/* 
+font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Slab', serif;
+*/
+
+/* End Fonts */
+/* Start Global */
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+h1, h2, h3, h4, h5 , h6{
+  font-family: 'Roboto Slab', serif;
+}
+p, li{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  letter-spacing: .5px;
+}
+a {
+  color: inherit;
+  text-decoration: none !important;
+}
+
+* {
+  box-sizing: border-box;
+}
+.hidden{
+  visibility: hidden !important;
+  opacity: 0 !important;
+}
+/* End Global */
+/* Start Navbar */
+nav{
+  z-index: 100;
+  height: 100vh;
+  width: inherit;
+  position: fixed;
+  transition: .5s;
+  color: black;
+}
+nav .navbar-toggler{
+  display: none;
+}
+nav .close-icon{
+  cursor: pointer;
+  position: absolute;
+  right: 10px;
+  top: 13px;
+  font-size: 22px;
+  color: rgb(202, 199, 199) !important;
+}
+nav .navbar-logo a, nav .navbar-logo svg{
+  letter-spacing: 2px;
+  color: #007bff;
+  font-size: 25px;
+  font-weight: 600;
+  font-variant: small-caps;
+  font-family: 'Roboto', 'Segoe UI',  Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+nav .nav{
+  transition: .2s;
+}
+nav .nav .nav-item a, nav .nav .nav-item svg{
+  font-size: 17px !important;
+  font-weight: 400;
+  color: #676B84 !important;
+  font-size: 18px;
+  padding-bottom: 2px;
+  margin-right: 2px;
+  transition: .5s;
+}
+nav .nav .nav-item svg {
+  font-size: 22px !important;
+  margin-right: 10px;
+}
+nav .nav .nav-item:hover a, nav .nav .nav-item:hover svg{
+  color: rgba(0, 0, 0, 0.774) !important;
+}
+nav.close {
+  padding: 0 !important;
+}
+nav.close .navbar-toggler{
+  display: block;
+  opacity: 1;
+  visibility: visible;
+  border: none;
+  margin: 15px 0 0 0 !important;
+  align-self: center;
+  padding: 0;
+  cursor: pointer;
+  transition: .3s;
+}
+nav.close .close-icon{
+  transition: .5s;
+  opacity: 0;
+  visibility: hidden;
+}
+nav.close .nav.close .nav-item .nav-link svg{
+  font-size: 22px;
+  margin: 15px 0;
+}
+@media screen and (max-width: 575.99px){
+  nav .close-icon{
+    top: 10px;
+  }
+}
+/* End Navbar */
+/* Start Header */
+.header{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 30px;
+}
+.header .icons{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-right: 50px;
+}
+.header .icons div {
+  position: relative;
+  cursor: pointer;
+  margin: 0 3px;
+}
+.header .icons div span.red-dot{
+  background-color: red;
+  padding: 5px 5px;
+  border-radius: 50%;
+  position: absolute;
+  top: 3px;
+  right: 0px;
+  z-index: 1;
+}
+.header .icons div:nth-child(1) span.red-dot{
+  top: 5px;
+  right: 3px;
+}
+.header .profile-info {
+  position: relative;
+}
+.header .profile-info .image{
+  max-width: 77px;
+  max-height: 77px;
+  cursor: pointer;
+}
+.header .profile-info .info{
+  position: absolute;
+  top: 90px;
+  right: 50%;
+  transform: translateX(15%);
+  width: 180px;
+  background-color: #4D4F5C;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  transition: .5s;
+}
+.header .profile-info .info::after{
+  content: '';
+  border: 10px solid #4d4f5c;
+  border-top-color: transparent;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  position: absolute;
+  top: -17px;
+  right: 18px;
+  z-index: 1;
+}
+.header .profile-info .info h5{
+  color: #828BB2;
+  font-size: 13px;
+}
+.header .profile-info .info h6{
+  font-size: 12px;
+  text-align: center;
+}
+.header .profile-info .info ul li a{
+  font-size: 14px !important; 
+}
+/* End Header */
