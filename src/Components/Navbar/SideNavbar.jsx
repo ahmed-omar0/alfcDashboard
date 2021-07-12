@@ -1,12 +1,13 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { useRef } from 'react';
-import TogglerIcon from './TogglerIcon'
 // Icons
 import { BiWorld } from 'react-icons/bi';
 // Redux
 import { useDispatch } from 'react-redux';
-import CloseNav from './CloseNav';
-import MainNav from './MainNav';
+// Components
+import TogglerIcon from './components/TogglerIcon';
+import CloseNav from './components/CloseNav';
+import MainNav from './components/MainNav';
 
 const SideNavbar = () => {
     const dispatch = useDispatch()

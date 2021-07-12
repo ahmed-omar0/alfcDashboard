@@ -1,5 +1,5 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { toggleNavbar } from '../../redux/action';
+import { toggleNavbar } from '../../../redux/action';
 import { AiFillCloseCircle } from 'react-icons/ai';
 import { useSelector } from 'react-redux';
 
