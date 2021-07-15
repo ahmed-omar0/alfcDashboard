@@ -11,15 +11,15 @@ function Header() {
         infoRef.current.classList.toggle('hidden')
     }
     return (
-        <div className="header p-sm-5 p-3">
+        <div className="header bg-primary p-sm-5 p-3">
             <div className="icons">
                 <div>
                     <span className="red-dot"></span>
-                    <IoNotificationsOutline className="text-primary fs-3"/>
+                    <IoNotificationsOutline className="text-white  fs-3"/>
                 </div>
                 <div>
                     <span className="red-dot"></span>
-                    <IoChatbubblesOutline className="text-primary fs-3"/>
+                    <IoChatbubblesOutline className="text-white  fs-3"/>
                 </div>
             </div>
             <div className="profile-info" onMouseLeave={handleHover} onMouseEnter={handleHover}>

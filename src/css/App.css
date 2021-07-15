@@ -6,6 +6,8 @@ font-family: 'Roboto Slab', serif;
 */
 
 /* End Fonts */
+/* Import CSS Files */
+@import './dashboard.css';
 /* Start Global */
 html,
 body {
@@ -116,7 +118,6 @@ nav.close .nav.close .nav-item .nav-link svg{
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  padding-right: 30px;
 }
 .header .icons{
   display: flex;
@@ -160,6 +161,7 @@ nav.close .nav.close .nav-item .nav-link svg{
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
   transition: .5s;
+  z-index: 10;
 }
 .header .profile-info .info::after{
   content: '';
@@ -182,5 +184,11 @@ nav.close .nav.close .nav-item .nav-link svg{
 }
 .header .profile-info .info ul li a{
   font-size: 14px !important; 
+}
+@media screen and (min-width: 991.99px) {
+  .header{
+    padding-top: 0px !important;
+    height: 280px;
+  }
 }
 /* End Header */

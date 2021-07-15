@@ -1,0 +1,36 @@
+.cards .card{
+    width: 240px;
+}
+.cards .card .card-header, .cards .card .card-header .icon svg{
+    color: #e3cece;
+    font-size: 25px;
+}
+.cards .card .card-header h3{
+    font-size: 19px;
+    text-transform: uppercase;
+}
+.cards .card .card-body .increasement-percent {
+    color: #2dce89;
+    font-weight: 600;
+}
+/* Start Charts */
+.charts div{
+    width: 420px;
+}
+@media screen and (max-width: 360px) {
+    .charts div{
+        width: 250px;
+    }   
+}
+@media screen and (min-width: 361px) and (max-width: 767.99) {
+    .charts div{
+        width: 360px;
+    }   
+}
+@media screen and (min-width: 991.99px) {
+    .cards {
+        margin-top: -85px;
+        margin-bottom: 10px;
+    }
+}
+/* End Charts */
