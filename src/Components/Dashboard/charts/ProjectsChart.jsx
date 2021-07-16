@@ -7,9 +7,9 @@ export default function ProjectsChart() {
         datasets: [{
             label: 'Projects of 2021',
             data: [30, 40, 45, 35, 50, 45, 55, 76, 70, 77, 80, 78],
-            backgroundColor: ['#9a1e1e'],
             borderColor: ['#2dce89'],
-            pointBorderColor: 'blue',
+            pointBackgroundColor: 'red',
+            pointBorderColor: 'red',
         }]  
     }
     const options = {
