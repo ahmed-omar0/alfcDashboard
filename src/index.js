@@ -11,9 +11,8 @@ import { store } from '../src/redux/store'
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-
 ReactDOM.render(
-  <React.StrictMode>
+  <React.StrictMode>  
     <Provider store={store}>
       <App />
     </Provider>

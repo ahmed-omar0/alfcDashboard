@@ -1,4 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
+// Router
+import { Link } from 'react-router-dom';
 // Icons
 import { AiFillDashboard, AiFillProject } from 'react-icons/ai';
 import { BsFillPeopleFill } from 'react-icons/bs';
@@ -9,45 +11,45 @@ const MainNav = (props) => {
     return (
         <ul className={`nav nav-pills flex-column fs-6 mt-4 align-self-center ${props.class}`} ref={props.navRef}>
             <li className="nav-item my-2">
-                <a href="/">
+                <Link to="/">
                     <AiFillDashboard/>
-                </a>
-                <a href="/"> 
+                </Link>
+                <Link to="/"> 
                     Dashboard
-                </a>
+                </Link>
             </li>
             <li className="nav-item my-2">
-                <a href="/projects">
+                <Link to="/projects">
                     <AiFillProject/>
-                </a>
-                <a href="/projects"> 
+                </Link>
+                <Link to="/projects"> 
                     Projects
-                </a>
+                </Link>
             </li>
             <li className="nav-item my-2">
-                <a href="/our-customers">
+                <Link to="/our-customers">
                     <BsFillPeopleFill/>
-                </a>
-                <a href="/our-customers"> 
+                </Link>
+                <Link to="/our-customers"> 
                     Our Cutomers
-                </a>
+                </Link>
             </li>
             <li className="nav-item my-2">
-                <a href="/profile">
+                <Link to="/profile">
                     <CgProfile/>
-                </a>
-                <a href="/profile"> 
+                </Link>
+                <Link to="/profile"> 
                     Profile
-                </a>
+                </Link>
             </li>
             <hr />
             <li className="nav-item my-2">
-                <a href="/login">
+                <Link to="/login">
                     <BiLogOut/>
-                </a>
-                <a href="/login">
+                </Link>
+                <Link to="/login">
                     Log-Out
-                </a>
+                </Link>
             </li>
         </ul>
     );

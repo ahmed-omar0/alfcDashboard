@@ -2,6 +2,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { useRef } from 'react';
 // Icons
 import { BiWorld } from 'react-icons/bi';
+// Router
+import { Link } from 'react-router-dom';
 // Redux
 import { useDispatch } from 'react-redux';
 // Components
@@ -30,9 +32,9 @@ const SideNavbar = () => {
                 <TogglerIcon dispatch={dispatch} navbarToggle={navbarToggle}/>
                 <div className='navbar-logo d-flex align-items-center justify-content-center' ref={logoRef}>
                     <BiWorld/>
-                    <a href="/" className="mb-0 mx-1">
+                    <Link to="/" clLinkssName="mb-0 mx-1">
                         ALFAROUQ
-                    </a>
+                    </Link>
                 </div>
                 <MainNav navRef={navRef}/>
                 <CloseNav closeNavRef={closeNavRef} class="hidden"/>
@@ -42,9 +44,9 @@ const SideNavbar = () => {
                 <TogglerIcon dispatch={dispatch} navbarToggle={navbarToggle}/>
                 <div className='navbar-logo d-flex align-items-center justify-content-center hidden' ref={logoRef}>
                     <BiWorld/>
-                    <a href="/" className="mb-0 mx-1">
+                    <Link to="/" className="mb-0 mx-1">
                         ALFAROUQ
-                    </a>
+                    </Link>
                 </div>
                 <MainNav navRef={navRef} class="hidden d-none"/>
                 <CloseNav closeNavRef={closeNavRef} class=""/>
