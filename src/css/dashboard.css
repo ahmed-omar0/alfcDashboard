@@ -34,3 +34,26 @@
     }
 }
 /* End Charts */
+/* Start Workers Table */
+.workers-table{
+    overflow-x: scroll;
+}
+.workers-table table{
+    min-height: 250px;
+}
+@media screen and (max-width: 991.99px){
+    .workers-table{
+        text-align: center;
+    }
+    .workers-table h2{
+        width: 132px;
+    }
+    .workers-table .btn{
+        margin-bottom: 6px;
+    }
+    .workers-table .actions .btn{
+        width: 125px;
+        padding: 5px;
+    }
+}
+/* End Workers Table */

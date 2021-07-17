@@ -25,6 +25,7 @@ const SideNavbar = () => {
         navRef.current.classList.toggle('d-none');
         closeNavRef.current.classList.toggle('hidden');
         logoRef.current.classList.toggle('hidden');
+        console.log('do')
     }
     return (
         window.innerWidth > 767.99 ?
@@ -48,7 +49,7 @@ const SideNavbar = () => {
                         ALFAROUQ
                     </Link>
                 </div>
-                <MainNav navRef={navRef} class="hidden d-none"/>
+                <MainNav navRef={navRef} class="hidden d-none" toggle={navbarToggle} dispatch={dispatch}/>
                 <CloseNav closeNavRef={closeNavRef} class=""/>
             </nav>
     );

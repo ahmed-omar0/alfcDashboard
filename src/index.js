@@ -65,6 +65,14 @@ reportWebVitals();
             >>> Status
             >>> Action
               --> Delete Or Change Details
+            >>> Add More
+              --> Form
+                /* Name
+                /* Position
+                /* Age
+                /* Start Date
+                /* Salary
+                /* Status
           * Add New
         ** Table Of Current Projects
             >>> Project Name
@@ -76,7 +84,7 @@ reportWebVitals();
               --> Delete Or Change Details
           * Add New
       // Projects Page
-        * Header & Date
+        * Header
         * Table Of All Projects
           >>> Project Name
           >>> Client Name
@@ -115,7 +123,7 @@ reportWebVitals();
           >>> Status --> Full Time
       // 404 Page 
         * 404 Page Is Not Found With  Electric Effect & Clip Property
-      // Log In Pags
+      // Log In Pages
         * Form
           >>> Name 
           >>> Email

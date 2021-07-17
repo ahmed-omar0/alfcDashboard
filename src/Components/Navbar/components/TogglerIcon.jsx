@@ -1,6 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { toggleNavbar } from '../../../redux/action';
 import { AiFillCloseCircle } from 'react-icons/ai';
+// Redux
+import { toggleNavbar } from '../../../redux/action';
 import { useSelector } from 'react-redux';
 
 const TogglerIcon = ({dispatch, navbarToggle}) => {

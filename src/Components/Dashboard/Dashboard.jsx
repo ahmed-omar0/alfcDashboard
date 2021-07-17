@@ -1,11 +1,14 @@
 import React from 'react'
+// Components
+import Card from './components/Card';
 import PerformanceChart from './charts/PerformanceChart'
 import ProjectsChart from './charts/ProjectsChart'
-import Card from './components/Card';
+import TableOfWorkers from './components/TableOfWorkers';
 // Icons
 import { CgPerformance } from 'react-icons/cg'
 import { IoMdPersonAdd } from 'react-icons/io' 
 import { AiFillProject, AiFillMoneyCollect} from 'react-icons/ai'
+
 
 export default function Dashboard() {
     return (
@@ -24,6 +27,7 @@ export default function Dashboard() {
                     <ProjectsChart/>
                 </div>
             </div>
+            <TableOfWorkers/>
         </React.Fragment>
     )
 }

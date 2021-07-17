@@ -19,7 +19,7 @@ const CloseNav = (props) => {
                 </a>
             </li>
             <li className="nav-item">
-                <a href="/ourcustomers" className="nav-link">
+                <a href="/our-customers" className="nav-link">
                     <BsFillPeopleFill title="Our Cutomers"/>
                 </a>
             </li>
