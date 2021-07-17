@@ -1,8 +1,10 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { delteWorker } from '../../../redux/action';
+import AddWorkersForm from './AddWorkersForm';
 
 function TableOfWorkers() {
+    const formRef = useRef();
     const dispatch = useDispatch()
     const workers = useSelector(state => state.workers);
     const items = workers.map(worker => {
@@ -37,6 +39,9 @@ function TableOfWorkers() {
             </tr>
         )
     })
+    const toggleForm = () => {
+        formRef.current.classList.toggle('hidden');
+    }
     return (
         <section className="workers-table">
             <h2 className="text-muted mb-3 mt-4 pb-2 fs-5">Our Workers</h2>
@@ -58,13 +63,14 @@ function TableOfWorkers() {
                 <tfoot className="text-center">
                     <tr>
                         <td colSpan="7">
-                            <button className="btn btn-primary">
+                            <button className="btn btn-primary" onClick={toggleForm}>
                                 Add More
                             </button>
                         </td>
                     </tr>
                 </tfoot>
             </table>
+            <AddWorkersForm formRef={formRef} toggleForm={toggleForm}/>
         </section>
     )
 }

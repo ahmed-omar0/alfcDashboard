@@ -57,3 +57,49 @@
     }
 }
 /* End Workers Table */
+/* Start Popup Form */
+.pop-up-form{
+    z-index: 100;
+    position: fixed;
+    inset: 0;
+    background-color: rgba(255, 255, 255, 0.822);
+    transition: .5s;
+}
+.pop-up-form svg{
+    float: right;
+    cursor: pointer;
+    font-size: 22px;
+    margin: 20px;
+    color: rgba(0, 0, 0, 0.692);
+}
+.pop-up-form form{
+    border: 1px solid;
+    border-radius: 20px;
+    padding: 10px;
+    text-align: center;
+}
+.pop-up-form form .form-control{
+    background-color: inherit !important;
+    border: none !important;
+    text-align: left;
+}
+.pop-up-form form .form-control input{
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid;
+}
+.pop-up-form form .form-control .error{
+    color: red;
+}
+.pop-up-form form .btn{
+    width: 50%;
+    font-size: 20px;
+}
+@media screen and (min-width: 991.99px) {
+    .pop-up-form form{
+        width: 80%;
+        margin: auto;
+        transform: translateY(40%);
+    }
+}
+/* End Popup Form */
