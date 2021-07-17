@@ -1,5 +1,6 @@
 import React , { useRef } from 'react';
 import avatar from '../images/avatar.jpg'
+import { Link } from 'react-router-dom'
 //  Icons
 import { CgProfile } from 'react-icons/cg';
 import { BiLogOut } from 'react-icons/bi';
@@ -32,19 +33,19 @@ function Header() {
                     <hr/>
                     <ul className="nav flex-column px-1">
                         <li className="nav-item">
-                            <a href="/profile" className="nav-link text-white">
+                            <Link to="/profile" className="nav-link text-white">
                                     <CgProfile  className="mx-1 fs-5"/> My Profile
-                            </a>
+                            </Link>
                         </li>
                         <li className="nav-item">
-                            <a href="/settings" className="nav-link text-white">
+                            <Link to="/settings" className="nav-link text-white">
                                     <IoSettingsOutline className="mx-1 fs-5"/> Settings
-                            </a>
+                            </Link>
                         </li>
                         <li className="nav-item">
-                            <a href="/login" className="nav-link text-white">
+                            <Link to="/login" className="nav-link text-white">
                                     <BiLogOut className="mx-1 fs-5"/> Log Out
-                            </a>
+                            </Link>
                         </li>
                     </ul>
                 </div>
