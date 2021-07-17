@@ -73,6 +73,9 @@
     color: rgba(0, 0, 0, 0.692);
 }
 .pop-up-form form{
+    width: 80%;
+    margin: auto;
+    transform: translateY(35%);
     border: 1px solid;
     border-radius: 20px;
     padding: 10px;
@@ -94,12 +97,5 @@
 .pop-up-form form .btn{
     width: 50%;
     font-size: 20px;
-}
-@media screen and (min-width: 991.99px) {
-    .pop-up-form form{
-        width: 80%;
-        margin: auto;
-        transform: translateY(40%);
-    }
 }
 /* End Popup Form */
