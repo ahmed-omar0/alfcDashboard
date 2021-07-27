@@ -3,7 +3,7 @@ import React from 'react'
 import Card from './components/Card';
 import PerformanceChart from './charts/PerformanceChart'
 import ProjectsChart from './charts/ProjectsChart'
-import TableOfWorkers from './components/TableOfWorkers';
+import TableOfEmployees from './workersTable/TableOfEmployees';
 // Icons
 import { CgPerformance } from 'react-icons/cg'
 import { IoMdPersonAdd } from 'react-icons/io' 
@@ -27,7 +27,7 @@ export default function Dashboard() {
                     <ProjectsChart/>
                 </div>
             </div>
-            <TableOfWorkers/>
+            <TableOfEmployees/>
         </React.Fragment>
     )
 }

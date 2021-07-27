@@ -1,3 +1,4 @@
 export const openedNavbar = 'navbarOpened';
-export const deleteWorker = 'workerDeleted';
-export const editWorker = 'workerEdited';
+export const workerDeleted = 'workerDeleted';
+export const workerEdited = 'workerEdited';
+export const workerAdded = 'workerAdded';

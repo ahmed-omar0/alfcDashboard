@@ -1,4 +1,4 @@
-import { deleteWorker, openedNavbar } from './actionTypes';
+import { openedNavbar, workerDeleted, workerEdited, workerAdded} from './actionTypes';
 
 export const initState = {
     navbarIsOpened: false,
@@ -9,7 +9,7 @@ export const initState = {
             "position": "Front-End Developer",
             "age": 22,
             "start_date": "16/7/2021",
-            "salary": 3000,
+            "salary": "3000 $",
             "status": "Part-Time",
         },
         {
@@ -18,7 +18,7 @@ export const initState = {
             "position": "Front-End Developer",
             "age": 22,
             "start_date": "10/1/2021",
-            "salary": 4000,
+            "salary": "4000 $",
             "status": "Full-Time",
         },
         {
@@ -27,7 +27,7 @@ export const initState = {
             "position": "Front-End Developer",
             "age": 25,
             "start_date": "20/8/2020",
-            "salary": 7000,
+            "salary": "7000 $",
             "status": "Full-Time",
 
         }
@@ -40,10 +40,46 @@ export const reducer = (state = initState, action) => {
                 ...state,
                 navbarIsOpened: action.payload
             }
-        case deleteWorker:
+        case workerDeleted:
             return {
                 ...state,
                 workers:  state.workers.filter(worker => worker.id !== action.payload.id)
+            }
+        case workerEdited:
+            const worker = state.workers.filter(worker => worker.id === action.payload.id)
+            worker.name = action.payload.name
+            worker.position = action.payload.position
+            worker.age = action.payload.age
+            worker.start_date = action.payload.start_date
+            worker.salary = action.payload.salary
+            worker.status = action.payload.status
+            const isEqual = (obj1, obj2) => {{
+                const obj1Keys = Object.keys(obj1)
+                for (const objKey of obj1Keys) {
+                    if (obj1[objKey] !== obj2[objKey]){
+                        return false 
+                    } else {
+                        return true
+                    }
+                }
+            }
+            }
+            const result = () => {
+                if(!isEqual(state.workers, action.payload)){
+                    const workers = state.workers.filter(worker => worker.id !== action.payload.id)
+                    return [...workers, action.payload]
+                } else {
+                    return [...state.workers, action.payload]
+                }
+            }
+            return {
+                ...state,
+                workers: result()
+            }
+        case workerAdded:
+            return {
+                ...state,
+                workers: [...state.workers, action.payload]
             }
         default: return state
     }

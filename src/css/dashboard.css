@@ -41,6 +41,26 @@
 .workers-table table{
     min-height: 250px;
 }
+.workers-table table .actions .btn{
+    transition: .5s;
+}
+.workers-table table .edit-alert{
+    position: relative;
+}
+.workers-table table .edit-alert::after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 17px;
+    right: -16px;
+    border: 8px solid #0d6efd;
+    border-bottom-color: #ffffff00;
+    border-right-color: #ffffff00;
+    border-top-color: #ffffff00;
+}
+.workers-table table .edit-alert svg{
+    cursor: pointer;
+}
 @media screen and (max-width: 991.99px){
     .workers-table{
         text-align: center;
